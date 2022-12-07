@@ -14,9 +14,9 @@
     "@types/jest": "*",
     "@types/node": "*",
     "@types/prettier": "*",
+    "aws-cdk": "*",
     "jest": "*",
     "ts-jest": "*",
-    "aws-cdk": "*",
     "ts-node": "*",
     "typescript": "*"
   },
