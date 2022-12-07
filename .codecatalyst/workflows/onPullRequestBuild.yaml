@@ -25,4 +25,3 @@ Actions:
         - Run: npm -g install yarn@^1
         - Run: yarn install
         - Run: yarn build
-        - Run: yarn export
