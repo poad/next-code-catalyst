@@ -37,8 +37,8 @@ Actions:
     Environment:
       Name: development
       Connections:
-        - Name: "786553742110"
-          Role: CodeCatalystPreviewDevelopmentAdministrator-d93bh8
+        - Name: 786553742110
+          Role: CodeCatalystPreviewDevelopmentAdministrator-rjxrs7
     Inputs:
       Sources:
         - WorkflowSource
@@ -58,5 +58,5 @@ Actions:
     Environment:
       Name: development
       Connections:
-        - Name: "786553742110"
-          Role: CodeCatalystPreviewDevelopmentAdministrator-d93bh8
+        - Name: 786553742110
+          Role: CodeCatalystPreviewDevelopmentAdministrator-rjxrs7
