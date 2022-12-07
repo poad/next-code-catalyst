@@ -20,9 +20,10 @@ Actions:
             - "**/*"
     Configuration:
       Steps:
-        - Run: npm install
-        - Run: npm run build
-        - Run: npm run export
+        - Run: npm -g install yarn@^1
+        - Run: yarn install
+        - Run: yarn build
+        - Run: yarn export
         - Run: mkdir -p cdk/frontend/build
         - Run: mv out/* cdk/frontend/build/
         - Run: find * -maxdepth 0 -name 'cdk' -prune -o -exec rm -rf '{}' ';'
