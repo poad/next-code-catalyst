@@ -3,32 +3,45 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "test": "echo ''",
-    "dev": "next dev --turbo",
+    "404": "cp out/404/index.html out/404.html",
+    "test": "jest --passWithNoTests",
+    "dev": "next dev",
     "build": "next build",
     "export": "next export",
+    "release": "next build && next export",
     "start": "next start",
-    "elint-check": "eslint --ext .ts,.js,.tsx,.jsx src",
-    "elint-fix": "eslint --fix --ext .ts,.js,.tsx,.jsx src",
-    "prettier-check": "prettier --check src",
-    "prettier-format": "prettier --write src",
-    "lint": "yarn prettier-check && yarn elint-check",
-    "lint-fix": "yarn prettier-format && yarn elint-fix",
+    "analyze": "ANALYZE=true next build",
+    "lint": "eslint --ext .ts,.js,.tsx,.jsx src",
     "clean": "rimraf build",
-    "all": "yarn lint && yarn build && yarn test && yarn export"
+    "pretest": "yarn build",
+    "all": "yarn install && yarn lint && yarn test",
+    "postbuild": "yarn 404",
+    "serve": "http-server out -p 8080"
   },
   "dependencies": {
+    "@emotion/react": "*",
+    "@emotion/server": "*",
+    "@emotion/styled": "*",
+    "@mui/icons-material": "*",
+    "@mui/material": "*",
+    "i18next": "*",
     "next": "^13",
+    "next-i18next": "*",
+    "next-language-detector": "*",
     "react": "*",
     "react-dom": "*",
+    "react-i18next": "*",
     "web-vitals": "*"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^13",
+    "@swc/jest": "*",
+    "@types/jest": "*",
     "@types/node": "*",
     "@types/react": "*",
     "@typescript-eslint/eslint-plugin": "*",
     "@typescript-eslint/parser": "*",
+    "autoprefixer": "*",
     "eslint": "*",
     "eslint-config-airbnb-base": "*",
     "eslint-config-airbnb-typescript": "*",
@@ -43,11 +56,21 @@
     "eslint-plugin-prettier": "*",
     "eslint-plugin-react": "*",
     "eslint-plugin-react-hooks": "*",
+    "http-server": "*",
+    "jest": "*",
+    "next-compose-plugins": "*",
     "next-transpile-modules": "*",
+    "postcss": "*",
     "prettier": "*",
     "rimraf": "*",
-    "swc-loader": "*",
+    "tailwindcss": "*",
     "typescript": "*"
   },
-  "packageManager": "yarn@3.3.0"
+  "jest": {
+    "transform": {
+      "^.+\\.(t|j)sx?$": [
+        "@swc/jest"
+      ]
+    }
+  }
 }
