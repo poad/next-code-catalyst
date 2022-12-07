@@ -3,20 +3,19 @@ import GitHub from '@mui/icons-material/GitHub';
 import { Box, Link } from '@mui/material';
 
 interface GitHubProjectLinkProps {
-  container?: Element,
-  owener: string,
-  repo: string,
+  container?: Element;
+  owener: string;
+  repo: string;
 }
 
-const GitHubProjectLink = ({ owener, repo } : GitHubProjectLinkProps): JSX.Element => {
+const GitHubProjectLink = ({
+  owener,
+  repo,
+}: GitHubProjectLinkProps): JSX.Element => {
   return (
-    <Box
-      position='fixed'
-      bottom='1rem'
-      right='1rem'
-    >
+    <Box position="fixed" bottom="1rem" right="1rem">
       <Link href={`https://github.com/${owener}/${repo}`}>
-        <GitHub sx={{ w: '3rem', h:'3rem' }} />
+        <GitHub sx={{ w: '3rem', h: '3rem' }} />
       </Link>
     </Box>
   );

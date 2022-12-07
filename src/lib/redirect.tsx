@@ -10,7 +10,8 @@ export const useRedirect = (to?: string): JSX.Element => {
   // language detection
   useEffect(() => {
     const detectedLng = languageDetector.detect();
-    if (to?.startsWith('/' + detectedLng) && router.route === '/404') { // prevent endless loop
+    if (to?.startsWith('/' + detectedLng) && router.route === '/404') {
+      // prevent endless loop
       router.replace('/' + detectedLng + router.route);
       return;
     }
@@ -21,20 +22,16 @@ export const useRedirect = (to?: string): JSX.Element => {
     router.replace('/' + detectedLng + to);
   });
 
-  return (<></>);
+  return <></>;
 };
 
 export const Redirect = (): JSX.Element => {
   useRedirect();
-  return (
-    <></>
-  );
+  return <></>;
 };
 
 // eslint-disable-next-line react/display-name
 export const getRedirect = (to: string | undefined) => (): JSX.Element => {
   useRedirect(to);
-  return (
-    <></>
-  );
+  return <></>;
 };

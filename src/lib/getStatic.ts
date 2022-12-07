@@ -22,6 +22,8 @@ export const getI18nProps = async (ctx: Context, ns = ['common']) => {
   return props;
 };
 
-export const makeStaticProps = (ns: string[] = []) => async (ctx: Context) => ({
-  props: await getI18nProps(ctx, ns),
-});
+export const makeStaticProps = (ns: string[] = []) => {
+  return async (ctx: Context) => ({
+    props: await getI18nProps(ctx, ns),
+  });
+};
