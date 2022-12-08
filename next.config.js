@@ -5,7 +5,8 @@ const config = {
   // i18n,
   trailingSlash: true,
   reactStrictMode: true,
-  swcMinify: false,
+  swcMinify: true,
+  productionBrowserSourceMaps: true,
 };
 
 /** @type {import('next').NextConfig} */

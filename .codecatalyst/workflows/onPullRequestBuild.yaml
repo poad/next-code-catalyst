@@ -1,5 +1,5 @@
 
-Name: onPullRequestBuildAndTest
+Name: onPullRequestBuild
 SchemaVersion: "1.0"
 Triggers:
   - Type: PULLREQUEST

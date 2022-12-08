@@ -5,11 +5,13 @@ import languageDetector from './languageDetector';
 
 export const useRedirect = (to?: string): JSX.Element => {
   const router = useRouter();
+  console.log(router.asPath);
   to = to || router.asPath;
 
   // language detection
   useEffect(() => {
     const detectedLng = languageDetector.detect();
+    console.log(detectedLng);
     if (to?.startsWith('/' + detectedLng) && router.route === '/404') {
       // prevent endless loop
       router.replace('/' + detectedLng + router.route);
