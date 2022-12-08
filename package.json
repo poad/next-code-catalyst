@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^13",
+    "@next/font": "^13",
     "@swc/jest": "*",
     "@types/jest": "*",
     "@types/node": "*",

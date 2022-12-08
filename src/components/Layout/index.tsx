@@ -7,7 +7,7 @@ import {
   Drawer,
   IconButton,
   List,
-  ListItem,
+  ListItemButton,
   ListItemIcon,
   ListItemText,
   Toolbar,
@@ -18,6 +18,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '@mui/material/styles';
 import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
+// import { IBM_Plex_Sans_JP } from '@next/font/google';
 import LangSwitcher from 'components/LangSwitcher';
 import GitHubProjectLink from 'components/GitHubProjectLink';
 
@@ -27,6 +28,11 @@ interface LayoutProps {
   container?: Element;
   title?: string | null;
 }
+
+// const fonts = IBM_Plex_Sans_JP({
+//   weight: ['300', '400', '500', '700'],
+//   subsets: ['cyrillic', 'japanese', 'latin', 'latin-ext'],
+// });
 
 const Layout = (props: PropsWithChildren<LayoutProps>) => {
   const { container, title } = props;
@@ -50,8 +56,7 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
       <Divider />
       <List>
         {['Info'].map((text) => (
-          <ListItem
-            button
+          <ListItemButton
             key={text}
             sx={{
               width: drawerWidth,
@@ -67,7 +72,7 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
               />
             </ListItemIcon>
             <ListItemText primary={text} />
-          </ListItem>
+          </ListItemButton>
         ))}
       </List>
     </Box>
@@ -135,6 +140,7 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
           display: 'flex',
           maxHeight: '100vh',
         }}
+        // className={fonts.className}
       >
         <CssBaseline />
         {appBar}
@@ -143,7 +149,7 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
       </Box>
 
       <footer>
-        <GitHubProjectLink owener="poad" repo="next-i18n-example" />
+        <GitHubProjectLink owener="poad" repo="next-code-catalyst" />
       </footer>
     </>
   );
