@@ -8,40 +8,56 @@ export class FrontendStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const frontendSourceBucket = new s3.Bucket(this, "FrontendAppBucket", {
-      websiteIndexDocument: "index.html",
-    })
+    const frontendSourceBucket = new s3.Bucket(this, 'FrontendAppBucket', {
+      websiteIndexDocument: 'index.html',
+    });
 
-    const frontendOriginAccessIdentity = new cloudfront.OriginAccessIdentity(this, "FrontendAppOIA", {
-      comment: "Access from CloudFront to the bucket."
-    })
+    const frontendOriginAccessIdentity = new cloudfront.OriginAccessIdentity(
+      this,
+      'FrontendAppOIA',
+      {
+        comment: 'Access from CloudFront to the bucket.',
+      },
+    );
 
-    frontendSourceBucket.grantRead(frontendOriginAccessIdentity)
+    frontendSourceBucket.grantRead(frontendOriginAccessIdentity);
 
-    const frontendCloudfront = new cloudfront.CloudFrontWebDistribution(this, "FrontendAppCloudFront", {
-      originConfigs: [{
-        s3OriginSource: {
-          s3BucketSource: frontendSourceBucket,
-          originAccessIdentity: frontendOriginAccessIdentity
-        },
-        behaviors: [{isDefaultBehavior: true}]
-      }],
-      errorConfigurations: [{
-        errorCode: 404,
-        errorCachingMinTtl: 0,
-        responseCode: 200,
-        responsePagePath: "/index.html"
-      }]
-    })
+    const frontendCloudfront = new cloudfront.CloudFrontWebDistribution(
+      this,
+      'FrontendAppCloudFront',
+      {
+        comment: 'example by CodeCatalyst',
+        originConfigs: [
+          {
+            s3OriginSource: {
+              s3BucketSource: frontendSourceBucket,
+              originAccessIdentity: frontendOriginAccessIdentity,
+            },
+            behaviors: [{ isDefaultBehavior: true }],
+          },
+        ],
+        errorConfigurations: [
+          {
+            errorCode: 404,
+            errorCachingMinTtl: 0,
+            responseCode: 200,
+            responsePagePath: '/index.html',
+          },
+        ],
+        httpVersion: cloudfront.HttpVersion.HTTP2_AND_3,
+      },
+    );
 
-    new s3_deployment.BucketDeployment(this, "FrontendAppDeploy", {
-      sources: [s3_deployment.Source.asset("frontend/build")],
+    new s3_deployment.BucketDeployment(this, 'FrontendAppDeploy', {
+      sources: [s3_deployment.Source.asset('frontend/build')],
       destinationBucket: frontendSourceBucket,
       distribution: frontendCloudfront,
-      distributionPaths: ["/*"],
-      memoryLimit: 1024
-    })
+      distributionPaths: ['/*'],
+      memoryLimit: 1024,
+    });
 
-    new cdk.CfnOutput(this, "AppURL", {value: `https://${frontendCloudfront.distributionDomainName}/`})
+    new cdk.CfnOutput(this, 'AppURL', {
+      value: `https://${frontendCloudfront.distributionDomainName}/`,
+    });
   }
 }
