@@ -11,11 +11,14 @@
     "cdk": "cdk"
   },
   "devDependencies": {
+    "@swc/core": "*",
+    "@swc/helpers": "*",
     "@types/jest": "*",
     "@types/node": "*",
     "@types/prettier": "*",
     "aws-cdk": "*",
     "jest": "*",
+    "regenerator-runtime": "*",
     "ts-jest": "*",
     "ts-node": "*",
     "typescript": "*"
@@ -24,5 +27,8 @@
     "aws-cdk-lib": "*",
     "constructs": "*",
     "source-map-support": "*"
+  },
+  "resolutions": {
+    "json5": ">=2.2.2"
   }
 }
