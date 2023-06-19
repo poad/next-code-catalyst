@@ -20,9 +20,9 @@ Actions:
             - "**/*"
     Configuration:
       Steps:
-        - Run: npm -g install yarn@^1
-        - Run: yarn install
-        - Run: yarn build
+        - Run: npm -g i pnpm
+        - Run: pnpm install
+        - Run: pnpm build
         - Run: mkdir -p cdk/frontend/build
         - Run: mv out/* cdk/frontend/build/
         - Run: find * -maxdepth 0 -name 'cdk' -prune -o -exec rm -rf '{}' ';'
