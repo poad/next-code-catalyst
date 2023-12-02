@@ -2,7 +2,8 @@ const withBundleAnalyzer = require('@next/bundle-analyzer');
 // const { i18n } = require('./next-i18next.config');
 
 const config = {
-  // i18n,
+  output: 'export'
+,  // i18n,
   trailingSlash: true,
   reactStrictMode: true,
   swcMinify: true,
