@@ -27,7 +27,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.2",
     "@mui/material": "^5.15.2",
-    "i18next": "^23.7.11",
+    "i18next": "^23.7.12",
     "next": "^14.0.4",
     "next-i18next": "^15.1.1",
     "next-language-detector": "^1.1.0",
@@ -39,7 +39,7 @@
   "devDependencies": {
     "@next/bundle-analyzer": "^14.0.4",
     "@types/node": "^20.10.5",
-    "@types/react": "^18.2.45",
+    "@types/react": "^18.2.46",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@typescript-eslint/parser": "^6.16.0",
     "autoprefixer": "^10.4.16",
