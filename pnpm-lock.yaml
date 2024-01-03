@@ -21,14 +21,14 @@ dependencies:
     specifier: ^5.15.2
     version: 5.15.2(@emotion/react@11.11.3)(@emotion/styled@11.11.0)(@types/react@18.2.46)(react-dom@18.2.0)(react@18.2.0)
   i18next:
-    specifier: ^23.7.13
-    version: 23.7.13
+    specifier: ^23.7.14
+    version: 23.7.14
   next:
     specifier: ^14.0.4
     version: 14.0.4(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
   next-i18next:
-    specifier: ^15.1.1
-    version: 15.1.1(i18next@23.7.13)(next@14.0.4)(react-i18next@14.0.0)(react@18.2.0)
+    specifier: ^15.1.2
+    version: 15.1.2(i18next@23.7.14)(next@14.0.4)(react-i18next@14.0.0)(react@18.2.0)
   next-language-detector:
     specifier: ^1.1.0
     version: 1.1.0
@@ -40,7 +40,7 @@ dependencies:
     version: 18.2.0(react@18.2.0)
   react-i18next:
     specifier: ~14.0.0
-    version: 14.0.0(i18next@23.7.13)(react-dom@18.2.0)(react@18.2.0)
+    version: 14.0.0(i18next@23.7.14)(react-dom@18.2.0)(react@18.2.0)
   web-vitals:
     specifier: ^3.5.1
     version: 3.5.1
@@ -1393,7 +1393,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001572
-      electron-to-chromium: 1.4.616
+      electron-to-chromium: 1.4.617
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.2)
 
@@ -1654,8 +1654,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /electron-to-chromium@1.4.616:
-    resolution: {integrity: sha512-1n7zWYh8eS0L9Uy+GskE0lkBUNK83cXTVJI0pU3mGprFsbfSdAc15VTFbo+A+Bq4pwstmL30AVcEU3Fo463lNg==}
+  /electron-to-chromium@1.4.617:
+    resolution: {integrity: sha512-sYNE3QxcDS4ANW1k4S/wWYMXjCVcFSOX3Bg8jpuMFaXt/x8JCmp0R1Xe1ZXDX4WXnSRBf+GJ/3eGWicUuQq5cg==}
 
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -2490,8 +2490,8 @@ packages:
     resolution: {integrity: sha512-tvfXskmG/9o+TJ5Fxu54sSO5OkY6d+uMn+K6JiUGLJrwxAVfer+8V3nU8jq3ts9Pe5lXJv4b1N7foIjJ8Iy2Gg==}
     dev: false
 
-  /i18next@23.7.13:
-    resolution: {integrity: sha512-DbCPlw6VmURSZa43iOnycxq9o15e+WuBWDBZ3aj+gQZcDz4sgnuKwrcwmP1n8gSSCwCN7CRFGTpnwTd93A16Mg==}
+  /i18next@23.7.14:
+    resolution: {integrity: sha512-URAhZ3zvqQOIiKUDUyv/f5sCSS0+QnFaEPS0qGSTea0p4tQ1kgddeR3/dUZDoyoqf3zSRQCPZAgLs/+LFKj8yw==}
     dependencies:
       '@babel/runtime': 7.23.7
     dev: false
@@ -2964,24 +2964,24 @@ packages:
     resolution: {integrity: sha512-OjJ+fV15FXO2uQXQagLD4C0abYErBjyjE0I0FHpOEIB8upw0hg1ldFP6cqHTJBH1cZqy96OeR3u1dJ+Ez2D4Bg==}
     dev: true
 
-  /next-i18next@15.1.1(i18next@23.7.13)(next@14.0.4)(react-i18next@14.0.0)(react@18.2.0):
-    resolution: {integrity: sha512-IueFofP7Z9G41VjSPX/LdKhjYDDXq/iLAUFap7Rcz/MlsjLQMC7aktzBslhKH6GBYLOXsuhAO98goBFQBdhelg==}
+  /next-i18next@15.1.2(i18next@23.7.14)(next@14.0.4)(react-i18next@14.0.0)(react@18.2.0):
+    resolution: {integrity: sha512-HfGVe0TRba9b+9jU9w7DJmOXobV7PTFxEeTEBYom/7HhKbTCspLzxAfzfhdaQSlCIbCJmXNeQAoWzXQ5wffsmA==}
     engines: {node: '>=14'}
     peerDependencies:
-      i18next: ^23.7.7
+      i18next: '>= 23.7.13'
       next: '>= 12.0.0'
       react: '>= 17.0.2'
-      react-i18next: ^13.5.0
+      react-i18next: '>= 13.5.0'
     dependencies:
       '@babel/runtime': 7.23.7
       '@types/hoist-non-react-statics': 3.3.5
       core-js: 3.35.0
       hoist-non-react-statics: 3.3.2
-      i18next: 23.7.13
+      i18next: 23.7.14
       i18next-fs-backend: 2.3.1
       next: 14.0.4(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
-      react-i18next: 14.0.0(i18next@23.7.13)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next: 14.0.0(i18next@23.7.14)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /next-language-detector@1.1.0:
@@ -3371,7 +3371,7 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-i18next@14.0.0(i18next@23.7.13)(react-dom@18.2.0)(react@18.2.0):
+  /react-i18next@14.0.0(i18next@23.7.14)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-OCrS8rHNAmnr8ggGRDxjakzihrMW7HCbsplduTm3EuuQ6fyvWGT41ksZpqbduYoqJurBmEsEVZ1pILSUWkHZng==}
     peerDependencies:
       i18next: '>= 23.2.3'
@@ -3386,7 +3386,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.7
       html-parse-stringify: 3.0.1
-      i18next: 23.7.13
+      i18next: 23.7.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
