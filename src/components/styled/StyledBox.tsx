@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 const StyledBox = styled(Box)(() => ({
   maxWidth: '880px',
   display: 'flex',
-  flexDirection: 'row',
+  // flexDirection: 'row',
   justifyContent: 'space-around',
   margin: '80px auto 40px',
   textDecoration: 'none',

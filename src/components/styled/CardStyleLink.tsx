@@ -4,7 +4,7 @@ import Link from '@mui/material/Link';
 const CardStyleLink = styled(Link)(() => ({
   padding: '18px 18px 24px',
   width: '220px',
-  textAlign: 'left',
+  align: 'left',
   color: '#434343',
   border: '1px solid #9b9b9b',
   textDecoration: 'none',

@@ -89,7 +89,7 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" noWrap sx={{ flexGrow: 1 }}></Typography>
+        <Typography variant="h6" noWrap sx={{ flexGrow: 1 }} />
         <LangSwitcher />
       </Toolbar>
     </AppBar>
