@@ -45,7 +45,6 @@ NextDocument.getInitialProps = async (ctx: DocumentContext) => {
 
   ctx.renderPage = () =>
     originalRenderPage({
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       enhanceApp: (App: any) => (props) => (
         <App emotionCache={cache} {...props} />
       ),
@@ -59,13 +58,11 @@ NextDocument.getInitialProps = async (ctx: DocumentContext) => {
     (style: {
       key: React.Key | null | undefined;
       ids: unknown[];
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       css: any;
     }) => (
       <style
         data-emotion={`${style.key} ${style.ids.join(' ')}`}
         key={style.key}
-        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: style.css }}
       />
     ),
