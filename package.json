@@ -25,8 +25,8 @@
     "@emotion/react": "^11.11.4",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.5",
-    "@mui/icons-material": "^5.15.15",
-    "@mui/material": "^5.15.15",
+    "@mui/icons-material": "^5.15.16",
+    "@mui/material": "^5.15.16",
     "i18next": "^23.11.3",
     "next": "^14.2.3",
     "next-i18next": "^15.3.0",
@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^14.2.3",
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.12.8",
     "@types/react": "^18.3.1",
     "@typescript-eslint/eslint-plugin": "^7.8.0",
     "@typescript-eslint/parser": "^7.8.0",
@@ -69,5 +69,6 @@
         "@swc/jest"
       ]
     }
-  }
+  },
+  "packageManager": "pnpm@9.0.6+sha512.f6d863130973207cb7a336d6b439a242a26ac8068077df530d6a86069419853dc1ffe64029ec594a9c505a3a410d19643c870aba6776330f5cfddcf10a9c1617"
 }
