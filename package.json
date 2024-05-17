@@ -37,6 +37,7 @@
     "web-vitals": "^4.0.0"
   },
   "devDependencies": {
+    "@emotion/cache": "^11.11.0",
     "@next/bundle-analyzer": "^14.2.3",
     "@types/node": "^20.12.12",
     "@types/react": "^18.3.2",
