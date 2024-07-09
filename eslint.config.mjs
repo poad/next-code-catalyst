@@ -1,21 +1,10 @@
 import nextPlugin from '@next/eslint-plugin-next';
 import reactPlugin from 'eslint-plugin-react';
 import hooksPlugin from 'eslint-plugin-react-hooks';
-import typescriptParser from '@typescript-eslint/parser';
+import tseslint from 'typescript-eslint';
 
-export default [
+export default tseslint(
   {
-    languageOptions: {
-      parser: typescriptParser,
-      "parserOptions": {
-        "project": ["./tsconfig.json"],
-        "ecmaVersion": "latest",
-        "ecmaFeatures": {
-          "jsx": true
-        },
-        "useJSXTextNode": true
-      },
-    },
     files: ['**/*.ts', '**/*.tsx'],
     plugins: {
       react: reactPlugin,
@@ -32,7 +21,8 @@ export default [
       '@next/next/no-page-custom-font': 'off',
     },
   },
+  ...tseslint.configs.recommended,
   {
     ignores: ['./.next/*'],
   },
-];
+);
