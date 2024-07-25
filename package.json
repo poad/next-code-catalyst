@@ -25,8 +25,8 @@
     "@emotion/react": "^11.13.0",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.13.0",
-    "@mui/icons-material": "^5.16.4",
-    "@mui/material": "^5.16.4",
+    "@mui/icons-material": "^5.16.5",
+    "@mui/material": "^5.16.5",
     "i18next": "^23.12.2",
     "next": "^14.2.5",
     "next-i18next": "^15.3.0",
@@ -37,7 +37,7 @@
     "web-vitals": "^4.2.2"
   },
   "devDependencies": {
-    "@emotion/cache": "^11.13.0",
+    "@emotion/cache": "^11.13.1",
     "@next/bundle-analyzer": "^14.2.5",
     "@types/node": "^20.14.12",
     "@types/react": "^18.3.3",
