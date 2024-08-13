@@ -27,7 +27,7 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.7",
-    "i18next": "^23.12.2",
+    "i18next": "^23.12.3",
     "next": "^14.2.5",
     "next-i18next": "^15.3.1",
     "next-language-detector": "^1.1.0",
@@ -61,7 +61,7 @@
     "rimraf": "^6.0.1",
     "tailwindcss": "^3.4.9",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^8.0.1"
+    "typescript-eslint": "^8.1.0"
   },
   "jest": {
     "transform": {
