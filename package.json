@@ -22,7 +22,7 @@
     "serve": "http-server out -p 8080"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.0",
+    "@emotion/react": "^11.13.3",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.7",
