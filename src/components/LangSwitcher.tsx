@@ -30,7 +30,7 @@ const makePathname = (router: NextRouter, locale: string) => {
   return pathnames[pathnames.length - 1];
 };
 
-const LanguageSwitchLink = ({ locale, ...rest }: { [x: string]: string }) => {
+const LanguageSwitchLink = ({ locale, ...rest }: Record<string, string>) => {
   const router = useRouter();
   const pName = makePathname(router, locale);
   const { t } = useTranslation();
