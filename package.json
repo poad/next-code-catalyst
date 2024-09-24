@@ -40,10 +40,10 @@
     "@stylistic/eslint-plugin-jsx": "^2.8.0",
     "@stylistic/eslint-plugin-plus": "^2.8.0",
     "@stylistic/eslint-plugin-ts": "^2.8.0",
-    "@types/node": "^22.5.5",
+    "@types/node": "^22.6.1",
     "@types/react": "^18.3.8",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.11.0",
+    "eslint": "^9.11.1",
     "eslint-config-import": "^0.13.0",
     "eslint-config-next": "^14.2.13",
     "eslint-import-resolver-typescript": "^3.6.3",
@@ -57,9 +57,9 @@
     "next-transpile-modules": "^10.0.1",
     "postcss": "^8.4.47",
     "rimraf": "^6.0.1",
-    "tailwindcss": "^3.4.12",
+    "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2",
-    "typescript-eslint": "^8.6.0"
+    "typescript-eslint": "^8.7.0"
   },
   "jest": {
     "transform": {
