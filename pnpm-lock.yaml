@@ -893,8 +893,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  axe-core@4.10.1:
-    resolution: {integrity: sha512-qPC9o+kD8Tir0lzNGLeghbOrWMr3ZJpaRlCIb6Uobt/7N4FiEDvqUMnxzCHRHmg8vOg14kr5gVNyScRmbMaJ9g==}
+  axe-core@4.10.2:
+    resolution: {integrity: sha512-RE3mdQ7P3FRSe7eqCWoeQ/Z9QXrtniSjp1wUjt5nRC3WIpz5rSCve6o3fsZ2aCpJtrZjSZgjwXAoTO5k4tEI0w==}
     engines: {node: '>=4'}
 
   axobject-query@4.1.0:
@@ -1107,8 +1107,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.5.43:
-    resolution: {integrity: sha512-NxnmFBHDl5Sachd2P46O7UJiMaMHMLSofoIWVJq3mj8NJgG0umiSeljAVP9lGzjI0UDLJJ5jjoGjcrB8RSbjLQ==}
+  electron-to-chromium@1.5.45:
+    resolution: {integrity: sha512-vOzZS6uZwhhbkZbcRyiy99Wg+pYFV5hk+5YaECvx0+Z31NR3Tt5zS6dze2OepT6PCTzVzT0dIJItti+uAW5zmw==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -3318,7 +3318,7 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.0.0
 
-  axe-core@4.10.1: {}
+  axe-core@4.10.2: {}
 
   axobject-query@4.1.0: {}
 
@@ -3352,7 +3352,7 @@ snapshots:
   browserslist@4.24.2:
     dependencies:
       caniuse-lite: 1.0.30001669
-      electron-to-chromium: 1.5.43
+      electron-to-chromium: 1.5.45
       node-releases: 2.0.18
       update-browserslist-db: 1.1.1(browserslist@4.24.2)
 
@@ -3529,7 +3529,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.5.43: {}
+  electron-to-chromium@1.5.45: {}
 
   emoji-regex@8.0.0: {}
 
@@ -3747,7 +3747,7 @@ snapshots:
       array-includes: 3.1.8
       array.prototype.flatmap: 1.3.2
       ast-types-flow: 0.0.8
-      axe-core: 4.10.1
+      axe-core: 4.10.2
       axobject-query: 4.1.0
       damerau-levenshtein: 1.0.8
       emoji-regex: 9.2.2
