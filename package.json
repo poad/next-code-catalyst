@@ -18,12 +18,12 @@
     "serve": "http-server out -p 8080"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.3",
+    "@emotion/react": "^11.13.5",
     "@emotion/server": "^11.11.0",
-    "@emotion/styled": "^11.13.0",
+    "@emotion/styled": "^11.13.5",
     "@mui/icons-material": "^6.1.7",
     "@mui/material": "^6.1.7",
-    "i18next": "^23.16.6",
+    "i18next": "^23.16.8",
     "next": "^15.0.3",
     "next-i18next": "^15.3.1",
     "next-language-detector": "^1.1.0",
@@ -33,7 +33,7 @@
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
-    "@emotion/cache": "^11.13.1",
+    "@emotion/cache": "^11.13.5",
     "@next/bundle-analyzer": "^15.0.3",
     "@stylistic/eslint-plugin": "^2.11.0",
     "@stylistic/eslint-plugin-js": "^2.11.0",
@@ -68,5 +68,5 @@
       ]
     }
   },
-  "packageManager": "pnpm@9.13.2+sha512.88c9c3864450350e65a33587ab801acf946d7c814ed1134da4a924f6df5a2120fd36b46aab68f7cd1d413149112d53c7db3a4136624cfd00ff1846a0c6cef48a"
+  "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387"
 }
