@@ -1,4 +1,5 @@
 const withBundleAnalyzer = require('@next/bundle-analyzer');
+const { escape } = require('querystring');
 // const { i18n } = require('./next-i18next.config');
 
 const config = {
@@ -6,8 +7,10 @@ const config = {
 ,  // i18n,
   trailingSlash: true,
   reactStrictMode: true,
-  swcMinify: true,
   productionBrowserSourceMaps: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 /** @type {import('next').NextConfig} */

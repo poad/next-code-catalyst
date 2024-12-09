@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import { Box, Typography } from '@mui/material';
 import { Trans, useTranslation } from 'react-i18next';
 

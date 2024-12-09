@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { JSX } from 'react';
 import createEmotionServer from '@emotion/server/create-instance';
 import theme from '../styles/theme';
 import createCache from '@emotion/cache';
