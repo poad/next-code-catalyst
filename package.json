@@ -29,7 +29,7 @@
     "next-language-detector": "^1.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-i18next": "~15.3.0",
+    "react-i18next": "~15.4.0",
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
@@ -60,7 +60,7 @@
     "rimraf": "^6.0.1",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.18.2"
+    "typescript-eslint": "^8.19.0"
   },
   "jest": {
     "transform": {
