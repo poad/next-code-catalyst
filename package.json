@@ -41,7 +41,7 @@
     "@stylistic/eslint-plugin-plus": "^2.12.1",
     "@stylistic/eslint-plugin-ts": "^2.12.1",
     "@types/node": "^22.10.5",
-    "@types/react": "^19.0.3",
+    "@types/react": "^19.0.4",
     "@types/react-dom": "^19.0.2",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.17.0",
@@ -59,7 +59,7 @@
     "postcss": "^8.4.49",
     "rimraf": "^6.0.1",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.2",
+    "typescript": "^5.7.3",
     "typescript-eslint": "^8.19.1"
   },
   "jest": {
