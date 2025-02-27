@@ -1108,9 +1108,6 @@ packages:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
 
-  caniuse-lite@1.0.30001700:
-    resolution: {integrity: sha512-2S6XIXwaE7K7erT8dY+kLQcpa5ms63XlRkMkReXjle+kf6c5g38vyMl+Z5y8dSxOFDhcFe+nxnn261PLxBSQsQ==}
-
   caniuse-lite@1.0.30001701:
     resolution: {integrity: sha512-faRs/AW3jA9nTwmJBSO1PQ6L/EOgsB5HMQQq4iCu5zhPgVVgO/pZRHlmatwijZKetFw8/Pr4q6dEN8sJuq8qTw==}
 
@@ -1258,8 +1255,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.5.104:
-    resolution: {integrity: sha512-Us9M2L4cO/zMBqVkJtnj353nQhMju9slHm62NprKTmdF3HH8wYOtNvDFq/JB2+ZRoGLzdvYDiATlMHs98XBM1g==}
+  electron-to-chromium@1.5.107:
+    resolution: {integrity: sha512-dJr1o6yCntRkXElnhsHh1bAV19bo/hKyFf7tCcWgpXbuFIF0Lakjgqv5LRfSDaNzAII8Fnxg2tqgHkgCvxdbxw==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -2166,8 +2163,8 @@ packages:
     engines: {node: '>=18.12'}
     hasBin: true
 
-  portfinder@1.0.32:
-    resolution: {integrity: sha512-on2ZJVVDXRADWE6jnQaX0ioEylzgBpQk8r55NE4wjXW1ZxO+BgDlY6DXwj20i0V8eB4SenDQ00WEaxfiIQPcxg==}
+  portfinder@1.0.33:
+    resolution: {integrity: sha512-+2jndHT63cL5MdQOwDm9OT2dIe11zVpjV+0GGRXdtO1wpPxv260NfVqoEXtYAi/shanmm3W4+yLduIe55ektTw==}
     engines: {node: '>= 0.12.0'}
 
   possible-typed-array-names@1.1.0:
@@ -2571,8 +2568,8 @@ packages:
     resolution: {integrity: sha512-N6uOhuW6zO95P3Mel2I2zMsbsanvvtgn6jVqJv4vbVcz/JN0OkL9suomjQGmWtxJQXOCqUJvquc1sMeNz/IwlA==}
     engines: {node: '>= 0.8.0'}
 
-  update-browserslist-db@1.1.2:
-    resolution: {integrity: sha512-PPypAm5qvlD7XMZC3BujecnaOxwhrtoFR+Dqkk5Aa/6DssiH0ibKoketaj9w8LP7Bont1rYeoV5plxD7RTEPRg==}
+  update-browserslist-db@1.1.3:
+    resolution: {integrity: sha512-UxhIZQ+QInVdunkDAaiazvvT/+fXL5Osr0JZlJulepYu6Jd7qJtDZjlur0emRlT71EN3ScPoE7gvsuIKKNavKw==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
@@ -3557,7 +3554,7 @@ snapshots:
   autoprefixer@10.4.20(postcss@8.5.3):
     dependencies:
       browserslist: 4.24.4
-      caniuse-lite: 1.0.30001700
+      caniuse-lite: 1.0.30001701
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.1.1
@@ -3610,10 +3607,10 @@ snapshots:
 
   browserslist@4.24.4:
     dependencies:
-      caniuse-lite: 1.0.30001700
-      electron-to-chromium: 1.5.104
+      caniuse-lite: 1.0.30001701
+      electron-to-chromium: 1.5.107
       node-releases: 2.0.19
-      update-browserslist-db: 1.1.2(browserslist@4.24.4)
+      update-browserslist-db: 1.1.3(browserslist@4.24.4)
 
   buffer-from@0.1.2: {}
 
@@ -3641,8 +3638,6 @@ snapshots:
       get-intrinsic: 1.3.0
 
   callsites@3.1.0: {}
-
-  caniuse-lite@1.0.30001700: {}
 
   caniuse-lite@1.0.30001701: {}
 
@@ -3781,7 +3776,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.5.104: {}
+  electron-to-chromium@1.5.107: {}
 
   emoji-regex@8.0.0: {}
 
@@ -4320,7 +4315,7 @@ snapshots:
       mime: 1.6.0
       minimist: 1.2.8
       opener: 1.5.2
-      portfinder: 1.0.32
+      portfinder: 1.0.33
       secure-compare: 3.0.1
       union: 0.5.0
       url-join: 4.0.1
@@ -4811,7 +4806,7 @@ snapshots:
 
   pnpm@10.5.2: {}
 
-  portfinder@1.0.32:
+  portfinder@1.0.33:
     dependencies:
       async: 2.6.4
       debug: 3.2.7
@@ -5306,7 +5301,7 @@ snapshots:
     dependencies:
       qs: 6.14.0
 
-  update-browserslist-db@1.1.2(browserslist@4.24.4):
+  update-browserslist-db@1.1.3(browserslist@4.24.4):
     dependencies:
       browserslist: 4.24.4
       escalade: 3.2.0
